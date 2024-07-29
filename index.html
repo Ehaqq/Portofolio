@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Personal Portfolio Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/2b05088d83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <br /><span>Adam Ezra Haqqani</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------About me------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./photo_2024-07-29_11-27-59.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a 6th semester Informatics Engineering student who has the
+              desire to make a real contribution to technological progress in
+              the world of technology, I want to improve my academic achievement
+              and skills. I have experience in machine learning and web
+              development, having worked on various web projects, as well as
+              machine learning and deep learning model development.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span>
+                  <p>English (passive)</p>
+                </li>
+                <li></li>
+                <li></li>
+                <li>
+                  <span>Language Programming</span>
+                  <p>PHP, Python, Dart, Java</p>
+                </li>
+                <li></li>
+                <li></li>
+                <li>
+                  <span>Framework</span>
+                  <p>Laravel, Flask, Flutter</p>
+                </li>
+                <li>
+                  <span>Libraries</span>
+                  <p>
+                    Bootstrap, Tensorflow, NLTK, Pandas, Scikit-Learn, OpenCV,
+                    Ultralytics
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Sep 2021 - Present</span><br />
+                  <p>Politeknik Harapan Bersama</p>
+                  <p>Undergraduate in Informatics Engineering, 3.49/4.00</p>
+                </li>
+                <li>
+                  <span>Aug 2023 - Jan 2024</span><br />
+                  <p>Bangkit Academy</p>
+                  <p>
+                    Machine Learning Learning Path, Kampus Merdeka Study
+                    Independent
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>May 2022 - Present</span><br />
+                  <p>PLUG-IN</p>
+                  <p>Member of PLUG-IN</p>
+                  <p>• Learn to use the linux operating system.</p>
+                  <p>
+                    • Learn to configure networks with a variety of case
+                    studies.
+                  </p>
+                  <p>
+                    • Learn to create a server from the Ubuntu server operating
+                    system so that it can be hosted.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------Languages------------------------------ -->
+    <div id="languages">
+      <div class="container">
+        <h1 class="sub-title">My coding Languages</h1>
+        <div class="languages-list">
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>JAVA</h2>
+            <p>
+              Java is a versatile, object-oriented programming language known
+              for its portability and wide usage in building diverse
+              applications across different platforms.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python</h2>
+            <p>
+              Python is a high-level, versatile programming language renowned
+              for its readability and simplicity, favored for its wide range of
+              applications from web development to data analysis.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-php"></i>
+            <h2>PHP</h2>
+            <p>
+              PHP is an open-source scripting language used for web development,
+              running on the server to create dynamic web pages. It's known for
+              its simplicity, flexibility, and compatibility with databases and
+              frameworks like WordPress and Drupal.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/PHP">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-dart-lang"></i>
+            <h2>Dart</h2>
+            <p>
+              Dart, by Google, is a client-optimized language for fast apps on
+              mobile, web, and desktop, and powers the Flutter framework. It
+              features a strong type system and modern syntax.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Dart_(programming_language)"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------Projects------------------------------ -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="projects">
+            <img src="./project1.png" />
+            <div class="layer">
+              <h3>
+                Determining Website for The Best Islamic Teachers with Decision
+                Support System feature.
+              </h3>
+              <p>Laravel, Bootstrap, MySQL, SAW Method</p>
+              <a href="https://github.com/Ehaqq/wpm.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <img src="./project2.png" />
+            <div class="layer">
+              <h3>Website UMKM Desa Adiwerna</h3>
+              <p>JavaScript, HTML, CSS</p>
+              <a href="https://ehaqq.github.io/tahukuning.github.io/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="projects">
+            <img src="./project3.png" />
+            <div class="layer">
+              <h3>Detection Yoga Pose Backend</h3>
+              <p>OpenCV, Mediapipe, Flask, MySQL, MongoDB, Streamlit</p>
+              <a href="https://github.com/Ehaqq/flask_deteksi_pose_yoga.git"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------contact------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> a.adamezra@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 08814169127</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/zra.haqq/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/adam-ezra-haqqani-968759249/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Ehaqq"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
